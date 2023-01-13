@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{ 
+               background-image: url('https://pbs.twimg.com/media/FVmaimLaUAA7HGK.jpg:large' );
+               border: 3px solid;
+               background-color: rgb(29, 31, 31);
+               text-align: left;
+               font-size: medium;
+               font-style: var(--css);
+               color: rgb(33, 34, 36);
+            }
+            body{
+            background-color:azure;
+                 font-weight: 100;
+                 font-family: Georgia, 'Times New Roman', Times, serif;
+                 color: blueviolet; 
+            }
+    </style>
+</head>
+<body>
+    <div>
+        <center>
+            <h1>Travelling information form </h1>
+            <p>please provide with contact information below and we will arrange your reserve your ticket </p></center>
+            <form >
+                <!--create a dropdownlist using select tag like 
+                small one-->
+              Title <select name="it" size="1">
+                <option value="select">--select--</option>
+                <option value="Mr">Mr</option>
+                <option value="Mrs">Mrs</option>
+                <option value="Ms">Mr</option>
+              </select> <br><br> 
+             <label for="fname">First name :</label>
+             <input type="text" id="fname" name="First name " ><br><br>
+             <label for="lname">Last name :</label>
+             <input type="text" id="lname" name="Last name"><br><br>
+             <!-- you can easily make dateofbirth-->
+             <label for="bdaymonth">date-of-birth :</label>
+             <input type="date" id="bdaymonth" placeholder="dd-mm-yyyy"><br><br>
+             <label for="orgname">Organisation name</label>
+             <input type="text" id="orgname" name="organisation name"><br><br>
+             <!--for email-->
+             <label for="email">E-mail :</label>
+             <input type="email" id="email" name="email"><br><br>
+             <label for="number">Mobile no. :</label>
+             <input type="number" id="number" name="mobile no."><br><br>
+             <h2 style="color:rgb(16, 1, 31)">Travel details </h2><hr>
+             <!--use of radiobuttuon attributes-->
+             <label for="services">please check the services you need</label><br><br>
+             <input type="radio" id="services" value="Airline ticket" name="Services">Airline ticket<br><br>
+             <input type="radio" id="services" value="Rental car" name="Services">Rental car<br><br>
+             <input type="radio" id="services" value="hotel accomodation" name="Services">Hotel accomodation<br><br>
+             <input type="radio" id="services" value="Bus reistration" name="Services">Bus reistration<br><br>
+              <textarea id="view" row="10" cols="30">write your opinion</textarea> <br><br>
+              <input type="reset" name="rst" value="reset"><br><br>
+            <input type="submit" name="submit" value="submit"><br><br>
+             
+
+
+
+            </form>
+        
+    </div>
+</body>
+</html>
